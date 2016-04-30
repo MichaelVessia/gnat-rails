@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  file_name: MyString
+  date_time: MyString
+  ssid: MyString
+  bssid: MyString
+  signal_strength: MyString
+  device_info: MyString
+  device_mac: MyString
+
+two:
+  file_name: MyString
+  date_time: MyString
+  ssid: MyString
+  bssid: MyString
+  signal_strength: MyString
+  device_info: MyString
+  device_mac: MyString

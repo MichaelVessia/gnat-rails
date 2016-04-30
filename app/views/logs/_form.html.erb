@@ -1,0 +1,45 @@
+<%= form_for(@log) do |f| %>
+  <% if @log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@log.errors.count, "error") %> prohibited this log from being saved:</h2>
+
+      <ul>
+      <% @log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :file_name %><br>
+    <%= f.text_field :file_name %>
+  </div>
+  <div class="field">
+    <%= f.label :date_time %><br>
+    <%= f.text_field :date_time %>
+  </div>
+  <div class="field">
+    <%= f.label :ssid %><br>
+    <%= f.text_field :ssid %>
+  </div>
+  <div class="field">
+    <%= f.label :bssid %><br>
+    <%= f.text_field :bssid %>
+  </div>
+  <div class="field">
+    <%= f.label :signal_strength %><br>
+    <%= f.text_field :signal_strength %>
+  </div>
+  <div class="field">
+    <%= f.label :device_info %><br>
+    <%= f.text_field :device_info %>
+  </div>
+  <div class="field">
+    <%= f.label :device_mac %><br>
+    <%= f.text_field :device_mac %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

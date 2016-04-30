@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @log.file_name %>
+</p>
+
+<p>
+  <strong>Date time:</strong>
+  <%= @log.date_time %>
+</p>
+
+<p>
+  <strong>Ssid:</strong>
+  <%= @log.ssid %>
+</p>
+
+<p>
+  <strong>Bssid:</strong>
+  <%= @log.bssid %>
+</p>
+
+<p>
+  <strong>Signal strength:</strong>
+  <%= @log.signal_strength %>
+</p>
+
+<p>
+  <strong>Device info:</strong>
+  <%= @log.device_info %>
+</p>
+
+<p>
+  <strong>Device mac:</strong>
+  <%= @log.device_mac %>
+</p>
+
+<%= link_to 'Edit', edit_log_path(@log) %> |
+<%= link_to 'Back', logs_path %>
