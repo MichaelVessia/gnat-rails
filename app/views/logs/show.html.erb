@@ -35,5 +35,20 @@
   <%= @log.device_mac %>
 </p>
 
+<p>
+  <strong>State:</strong>
+  <%= @log.state %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @log.type %>
+</p>
+
+<p>
+  <strong>Roaming:</strong>
+  <%= @log.roaming %>
+</p>
+
 <%= link_to 'Edit', edit_log_path(@log) %> |
 <%= link_to 'Back', logs_path %>

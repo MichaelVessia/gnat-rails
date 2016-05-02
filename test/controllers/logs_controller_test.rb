@@ -18,7 +18,7 @@ class LogsControllerTest < ActionController::TestCase
 
   test "should create log" do
     assert_difference('Log.count') do
-      post :create, log: { bssid: @log.bssid, date_time: @log.date_time, device_info: @log.device_info, device_mac: @log.device_mac, file_name: @log.file_name, signal_strength: @log.signal_strength, ssid: @log.ssid }
+      post :create, log: { bssid: @log.bssid, date_time: @log.date_time, device_info: @log.device_info, device_mac: @log.device_mac, file_name: @log.file_name, roaming: @log.roaming, signal_strength: @log.signal_strength, ssid: @log.ssid, state: @log.state, type: @log.type }
     end
 
     assert_redirected_to log_path(assigns(:log))
@@ -35,7 +35,7 @@ class LogsControllerTest < ActionController::TestCase
   end
 
   test "should update log" do
-    patch :update, id: @log, log: { bssid: @log.bssid, date_time: @log.date_time, device_info: @log.device_info, device_mac: @log.device_mac, file_name: @log.file_name, signal_strength: @log.signal_strength, ssid: @log.ssid }
+    patch :update, id: @log, log: { bssid: @log.bssid, date_time: @log.date_time, device_info: @log.device_info, device_mac: @log.device_mac, file_name: @log.file_name, roaming: @log.roaming, signal_strength: @log.signal_strength, ssid: @log.ssid, state: @log.state, type: @log.type }
     assert_redirected_to log_path(assigns(:log))
   end
 

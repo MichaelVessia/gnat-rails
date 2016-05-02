@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160430193805) do
+ActiveRecord::Schema.define(version: 20160502185909) do
 
   create_table "logs", force: :cascade do |t|
     t.string   "file_name"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 20160430193805) do
     t.string   "device_mac"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.string   "state"
+    t.string   "type"
+    t.string   "roaming"
   end
 
 end

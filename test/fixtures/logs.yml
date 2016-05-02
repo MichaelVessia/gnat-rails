@@ -8,6 +8,9 @@ one:
   signal_strength: MyString
   device_info: MyString
   device_mac: MyString
+  state: MyString
+  type: 
+  roaming: MyString
 
 two:
   file_name: MyString
@@ -17,3 +20,6 @@ two:
   signal_strength: MyString
   device_info: MyString
   device_mac: MyString
+  state: MyString
+  type: 
+  roaming: MyString

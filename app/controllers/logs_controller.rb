@@ -31,7 +31,6 @@ class LogsController < ApplicationController
         format.html { redirect_to @log, notice: 'Log was successfully created.' }
         format.json { render :show, status: :created, location: @log }
       else
-        byebug
         format.html { render :new }
         format.json { render json: @log.errors, status: :unprocessable_entity }
       end
@@ -70,6 +69,6 @@ class LogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:file_name, :date_time, :ssid, :bssid, :signal_strength, :device_info, :device_mac)
+      params.require(:log).permit(:file_name, :date_time, :ssid, :bssid, :signal_strength, :device_info, :device_mac, :state, :type, :roaming)
     end
 end
