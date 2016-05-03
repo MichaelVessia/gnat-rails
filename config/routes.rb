@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :logs
   post 'logs' => 'logs#create', :defaults => { :format => 'json' }
   resources :logs
   # The priority is based upon order of creation: first created -> highest priority.

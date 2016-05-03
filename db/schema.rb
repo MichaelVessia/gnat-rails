@@ -23,8 +23,9 @@ ActiveRecord::Schema.define(version: 20160502185909) do
     t.string   "device_mac"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    t.string   "state"
     t.string   "type"
+    t.string   "state"
+    t.string   "connection_type"
     t.string   "roaming"
   end
 

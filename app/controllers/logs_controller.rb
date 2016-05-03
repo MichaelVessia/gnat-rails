@@ -69,6 +69,6 @@ class LogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:file_name, :date_time, :ssid, :bssid, :signal_strength, :device_info, :device_mac, :state, :type, :roaming)
+      params.require(:log).permit(:file_name, :date_time, :ssid, :bssid, :signal_strength, :device_info, :device_mac, :state, :connection_type, :roaming)
     end
 end
